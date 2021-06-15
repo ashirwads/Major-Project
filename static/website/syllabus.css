@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+body{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('pic.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 50px;  
+}
+
+ ul li{
+ 	display: inline-block;
+ }
+
+ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease; 
+}
+
+ul li a:hover{
+	 background-color: #fff;
+	 color: #000;
+}
+
+.company img{
+	float: left;
+	width: 15px;
+	height: 15px;
+}
+ .menu-bar{
+ 	max-width: 1200px;
+ 	margin: auto;
+ }
+
+.sub-menu-1{
+ 	display: none;
+ }
+
+ .menu-bar ul li:hover .sub-menu-1{
+ 	display: block;
+ 	position: absolute;
+ 	margin-top: 30px;
+ 	margin-left: -30px;
+ 	text-align: left;
+ 	margin: 25px;
+ 	width: 100px; 
+ 	padding: 10px;
+}
+
+ .sub-menu-2{
+ 	display: none;
+ }
+
+ .menu-bar ul li:hover .sub-menu-2{
+ 	display: block;
+ 	position: absolute;
+}
+
+ .sub-menu-3{
+ 	display: none;
+ }
+
+ .menu-bar ul li:hover .sub-menu-3{
+ 	display: block;
+ 	position: absolute;
+}
+
+p{
+	text-align: center;
+	font-style: italic;
+	color: #fff;
+	font-size: 20px;
+}
+
+h2{
+	text-align: center;
+	font-style: italic;
+	color: #fff;
+	font-size: 30px;
+}
+
+.button{
+	margin: 6%;
+    text-align: center;
+}
+
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+ .btn:hover{
+     background-color: #fff;
+	 color: #000;
+}
+
+h3{
+	text-align: center;
+	font-style: italic;
+	color: #fff;
+	font-size: 20px;
+}
+
+q{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #ffffff00.;
+   color: black;
+   text-align: center;
+   font-size: 20px;
+}

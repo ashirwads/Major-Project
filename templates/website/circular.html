@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'website/circular.css' %}">
+</head>
+<body>
+		<div class ="menu-bar" class="logo">
+				<img src="{% static 'website/company.png' %}">
+			<ul>
+				<li><a href="{% url 'website-home' %}">Home</a></li>
+				<li><a href="#">Academics</a>
+                <div class="sub-menu-1">
+                 <ul>
+                 	<li><a href="{% url 'website-admission' %}">Admission</a></li> 
+                 	<li><a href="{% url 'website-course' %}">Courses</a></li>
+                 	<li><a href="{% url 'website-syllabus' %}">Syllabus</a></li>
+                 	<li><a href="{% url 'website-circular' %}">Circulars</a></li>
+                 </ul>
+               </div>
+				</li>
+				<li><a href="{% url 'website-contact' %}">Contact</a></li>
+				<li><a href="#">Accounts</a>
+			    <div class="sub-menu-2">
+                  <ul>
+                  	<li><a href="{% url 'website-fees' %}">Fee Structure</a></li>
+                  	<li><a href="{% url 'onlinepayment' %}">Online Fee Payment</a></li>
+                  </ul>
+              </div>
+				</li>
+				<li><a href="#">Others</a>
+          <div class="sub-menu-3">
+            <ul>
+              <li><a href="{% url 'login' %}">Login</a></li>
+              <li><a href="{% url 'register' %}">New here ?</a></li>
+              <li><a href="{% url 'website-complainbox' %}">Complain ?</a></li>
+            </ul>
+        </li>
+			</ul>
+		</div>
+		<br>
+		<br>
+    <br>
+<div class="content">
+	<h1 class="header">Circulars<h1>
+		<marquee behaviour="scroll" direction="up" scrollamount="3" onmouseover="this.attribute('scrollamount', 0, 0); this.stop()" class="moving-body">
+
+<h3 style="color:blue;">1)Regarding Fill Examination form for Even Semester 2019-20.</h3>
+<br>
+<h3 style="color:red;">2)URGENT: Regarding COVID 19 - Aarogya Setu App download.</h3>
+<br>
+<h3 style="color:white;">3)Code In Quarantine and Win prizes worth INR 50 Lakhs with TechGig Code Gladiators 2020.</h3>
+<br>
+<h3 style="color:pink;">4)Regarding salary of staff members</h3>
+<br>
+<h3 style="color:red;">5)Regarding Rumours About the end semester examination.</h3>
+<br>
+<h3 style="color:red;">6)Regarding prevention of COVID-19.</h3>
+</marquee>
+</div>
+  <br>
+  <br>
+  <div class="footer">
+  <q>Copyright@SIET</q>
+</div>
+</body>
+</html>

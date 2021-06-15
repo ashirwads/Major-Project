@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'website/admission.css' %}">
+</head>
+<body>
+		<div class ="menu-bar" class="logo">
+				<img src="{% static 'website/company.png' %}">
+			<ul>
+				<li><a href="{% url 'website-home' %}">Home</a></li>
+				<li><a href="#">Academics</a>
+                <div class="sub-menu-1">
+                 <ul>
+                 	<li><a href="{% url 'website-admission' %}">Admission</a></li>
+                 	<li><a href="{% url 'website-course' %}">Courses</a></li>
+                 	<li><a href="{% url 'website-syllabus' %}">Syllabus</a></li>
+                 	<li><a href="{% url 'website-circular' %}">Circulars</a></li>
+                 </ul>
+               </div>
+				</li>
+				<li><a href="{% url 'website-contact' %}">Contact</a></li>
+				<li><a href="#">Accounts</a>
+			    <div class="sub-menu-2">
+                  <ul>
+                  	<li><a href="{% url 'website-fees' %}">Fee Structure</a></li>
+                  	<li><a href="{% url 'onlinepayment' %}">Online Fee Payment</a></li>
+                  </ul>
+              </div>
+				</li>
+				<li><a href="#">Others</a>
+          <div class="sub-menu-3">
+            <ul>
+              <li><a href="{% url 'login' %}">Login</a></li>
+              <li><a href="{% url 'register' %}">New here ?</a></li>
+              <li><a href="{% url 'website-complainbox' %}">Complain ?</a></li>
+            </ul>
+        </li>
+			</ul>
+		</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Increase your Memory power
+        <br> and Focus</h1>
+        <br>
+    <p>SIET  creates an adequate environment for the education of our students,integrating the intellectual, technical,human and artistic-cultural skills.</p>
+     <br>
+     <br>
+     <br>
+     <br>
+     <p>Thus enabling their development and full potential as whole bilingual individuals.</p>
+      <br>
+     <div class="button"><a href="{% url 'application' %}" class="btn">APPLY NOW!</a></div>
+<br>
+  <br>
+  <div class="footer">
+  <q>Copyright@SIET</q>
+</div>
+	</body>
+	</html>

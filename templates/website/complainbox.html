@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="{% static 'website/complainbox.css' %}">
+</head>
+<body>
+    <div class ="menu-bar" class="logo">
+        <img src="{% static 'website/company.png' %}">
+      <ul>
+        <li><a href="{% url 'website-home' %}">Home</a></li>
+        <li><a href="#">Academics</a>
+                <div class="sub-menu-1">
+                 <ul>
+                  <li><a href="{% url 'website-admission' %}">Admission</a></li> 
+                  <li><a href="{% url 'website-course' %}">Courses</a></li>
+                  <li><a href="{% url 'website-syllabus' %}">Syllabus</a></li>
+                  <li><a href="{% url 'website-circular' %}">Circulars</a></li>
+                 </ul>
+               </div>
+        </li>
+        <li><a href="{% url 'website-contact' %}">Contact</a></li>
+        <li><a href="#">Accounts</a>
+          <div class="sub-menu-2">
+                  <ul>
+                    <li><a href="{% url 'website-fees' %}">Fee Structure</a></li>
+                    <li><a href="{% url 'onlinepayment' %}">Online Fee Payment</a></li>
+                  </ul>
+              </div>
+        </li>
+        <li><a href="#">Others</a>
+          <div class="sub-menu-3">
+            <ul>
+              <li><a href="{% url 'login' %}">Login</a></li>
+              <li><a href="{% url 'register' %}">New here ?</a></li>
+              <li><a href="{% url 'website-complainbox' %}">Complain ?</a></li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+    <br>
+
+<div class="container">
+    <h1 style="text-align: center; color: #000;">"Help Us to be the Best"</h1>
+  <div class="row">
+    <div class="column">
+      
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname" style="color: #fff;">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname" style="color: #fff;">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="complain" style="color: #fff;">complainer</label>
+        <select id="complain" name="compaliner">
+          <option value="teacher">Teacher</option>
+          <option value="student">Student</option>
+          <option value="teacher">Management Staff</option>
+          <option value="teacher">Parent</option>
+        </select>
+        <label for="subject" style="color: #fff;">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+ <br>
+  <br>
+  <div class="footer">
+  <q>Copyright@SIET</q>
+</div>
+</body>
+</html>

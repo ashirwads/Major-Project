@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="{% static 'website/syllabus.css' %}">
+</head>
+<body>
+    <div class ="menu-bar" class="logo">
+        <img src="{% static 'website/company.png' %}">
+      <ul>
+        <li><a href="{% url 'website-home' %}">Home</a></li>
+        <li><a href="#">Academics</a>
+                <div class="sub-menu-1">
+                 <ul>
+                  <li><a href="{% url 'website-admission' %}">Admission</a></li> 
+                  <li><a href="{% url 'website-course' %}">Courses</a></li>
+                  <li><a href="{% url 'website-syllabus' %}">Syllabus</a></li>
+                  <li><a href="{% url 'website-circular' %}">Circulars</a></li>
+                 </ul>
+               </div>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Accounts</a>
+          <div class="sub-menu-2">
+                  <ul>
+                    <li><a href="{% url 'website-fees' %}">Fee Structure</a></li>
+                    <li><a href="{% url 'onlinepayment' %}">Online Fee Payment</a></li>
+                  </ul>
+              </div>
+        </li>
+        <li><a href="#">Others</a>
+          <div class="sub-menu-3">
+            <ul>
+              <li><a href="{% url 'login' %}">Login</a></li>
+              <li><a href="{% url 'register' %}">New here ?</a></li>
+              <li><a href="{% url 'website-complainbox' %}">Complain ?</a></li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<h2> We at SIET include the most valuable branches in our organisation for our students.</h2> 
+<br>
+<h2>These Branches are going to boom in future and give our students the jobs they want.</h2>
+<br>
+<br>
+<p>Branches of B.Tech
+<br> 1)Computer Science Engineering
+<br> 2)Mechanical Engineering
+<br> 3)Electrical Engineering
+<br> 4)Automobile Engineering
+<br>
+<br>
+Branches of MBA 
+<br>1) MBA in Marketing
+<br>2) MBA in International Business
+<br>3) MBA in Information Technology
+<br>4) MBA in Human Resource Management
+<br>5) MBA in Health Care Management
+<br>6) MBA in Supply Chain Management
+<br>
+<br>For Syllabus Visit Aktu.com as it given as per the Guidelines of the university.
+<div class="button"><a href="https://aktu.ac.in/" class="btn">Please visit</a></div>
+</p>
+<h3>NOTE: Student's marks are seen first for the allotment of branches.
+<br> For More Info please contact to Chairman.
+</h3>
+ <br>
+  <br>
+  <div class="footer">
+   <q>Copyright@SIET</q>
+ </div>
+</body>
+</html>

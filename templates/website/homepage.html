@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="{% static 'website/style.css' %}">
+</head>
+<body>
+    <div class ="menu-bar" class="logo">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{message.tags}}">
+        <h5 style="color: yellow;">{{ message }}</h5>
+        </div>
+      {% endfor %}
+    {% endif %}
+        <img src="{% static 'website/company.png'%}">
+      <ul>
+        <li><a href="{% url 'website-home' %}">Home</a></li>
+        <li><a href="#">Academics</a>
+                <div class="sub-menu-1">
+                 <ul>
+                  <li><a href="{% url 'website-admission' %}">Admission</a></li> 
+                  <li><a href="{% url 'website-course' %}">Courses</a></li>
+                  <li><a href="{% url 'website-syllabus' %}">Syllabus</a></li>
+                  <li><a href="{% url 'website-circular' %}">Circulars</a></li>
+                 </ul>
+               </div>
+        </li>
+        <li><a href="{% url 'website-contact' %}">Contact</a></li>
+        <li><a href="#">Accounts</a>
+          <div class="sub-menu-2">
+                  <ul>
+                    <li><a href="{%url 'website-fees' %}">Fee Structure</a></li>
+                    <li><a href="{% url 'onlinepayment' %}">Online Fee Payment</a></li>
+                  </ul>
+              </div>
+        </li>
+        <li><a href="#">Others</a>
+          <div class="sub-menu-3">
+            <ul>
+              <li><a href="{% url 'login' %}">Login</a></li>
+              <li><a href="{% url 'register' %}">New here ?</a></li>
+              <li><a href="{% url 'website-complainbox' %}">Complain ?</a></li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+    <br>
+    <div class="row">
+  <div class="column" style="background-color:#ffffff00.;">
+    <h2>Affiliated by one of the Best University of India</h2>
+    <div class="button"><a href="{% url 'website-aktu' %}" class="btn">Know More</a></div>
+  </div>
+  <div class="column" style="background-color:#ffffff00.;">
+    <h2>"Committed to Excellence In Education Since.2002"</h2>
+    <div class="button"><a href="{% url 'website-siet' %}" class="btn">About Us</a></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h1> Secure Your Future Now!</h1> 
+<br>
+<br>
+  <p> We are Open for 2020</p>
+  <div class="button"><a href="{% url 'enquiry' %}" class="btn">RESERVE YOUR SEAT NOW!</a></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="footer">
+  <q>Copyright@SIET</q>
+</div>
+ </body>
+    </html>

@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'website/course.css' %}">
+</head>
+<body>
+		<div class ="menu-bar" class="logo">
+				<img src="{% static 'website/company.png' %}">
+			<ul>
+				<li><a href="{% url 'website-home' %}">Home</a></li>
+				<li><a href="#">Academics</a>
+                <div class="sub-menu-1">
+                 <ul>
+                 	<li><a href="{% url 'website-admission' %}">Admission</a></li>
+                 	<li><a href="{% url 'website-course' %}">Courses</a></li>
+                 	<li><a href="{% url 'website-syllabus' %}">Syllabus</a></li>
+                 	<li><a href="{% url 'website-circular' %}">Circulars</a></li>
+                 </ul>
+               </div>
+				</li>
+				<li><a href="{% url 'website-contact' %}">Contact</a></li>
+				<li><a href="#">Accounts</a>
+			    <div class="sub-menu-2">
+                  <ul>
+                  	<li><a href="{% url 'website-fees' %}">Fee Structure</a></li>
+                  	<li><a href="{% url 'onlinepayment' %}">Online Fee Payment</a></li>
+                  </ul>
+              </div>
+				</li>
+				<li><a href="#">Others</a>
+          <div class="sub-menu-3">
+            <ul>
+              <li><a href="{% url 'login' %}">Login</a></li>
+              <li><a href="{% url 'register' %}">New here ?</a></li>
+              <li><a href="{% url 'website-complainbox' %}">Complain ?</a></li>
+            </ul>
+        </li>
+			</ul>
+		</div>
+		<h1>Courses</h1>
+		<div class="row">
+  <div class="column">
+    <div class="card">
+      <h2>B.Tech</h2>
+      <div class="button"><a href="{% url 'website-syllabus' %}" class="btn">Branch</a> 
+       <br> 
+      <br>  
+      <br>  <a href="{% url 'application' %}" class="btn">APPLY NOW!</a></div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h2>MBA</h2>
+<div class="button"><a href="{% url 'website-syllabus' %}" class="btn">Branch</a> 
+    <br> 
+    <br>    
+	<br> <a href="{% url 'application' %}" class="btn">APPLY NOW!</a></div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h2>B.Pharma</h2>
+      <div class="button"><a href="{% url 'website-syllabus' %}" class="btn">Syllabus</a>
+       <br> 
+       <br> 
+      <br> <a href="{% url 'application' %}" class="btn">APPLY NOW!</a></div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h2>MCA</h2>
+      <div class="button"><a href="{% url 'website-syllabus' %}" class="btn">Syllabus</a> 
+      <br> 
+      <br>    
+      	<br> <a href="{% url 'application' %}" class="btn">APPLY NOW!</a></div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2>BBA</h2>
+      <div class="button"><a href="{% url 'website-syllabus' %}" class="btn">Syllabus</a>
+      <br> 
+      <br>     
+      <br> <a href="{% url 'application' %}" class="btn">APPLY NOW!</a></div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h2>BCA</h2>
+      <div class="button"><a href="{% url 'website-syllabus' %}" class="btn">Syllabus</a>
+       <br> 
+      <br>     
+      	<br> <a href="{% url 'application' %}" class="btn">APPLY NOW!</a></div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+  <q>Copyright@SIET</q>
+</div>
+	</body>
+	</html>

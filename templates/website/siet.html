@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'website/siet.css' %}">
+</head>
+<body>
+		<div class ="menu-bar" class="logo">
+				<img src="{% static 'website/company.png' %}">
+			<ul>
+				<li><a href="{% url 'website-home' %}">Home</a></li>
+				<li><a href="#">Academics</a>
+                <div class="sub-menu-1">
+                 <ul>
+                 	<li><a href="{% url 'website-admission' %}">Admission</a></li>
+                 	<li><a href="{% url 'website-course' %}">Courses</a></li>
+                 	<li><a href="{% url 'website-syllabus' %}">Syllabus</a></li>
+                 	<li><a href="{% url 'website-circular' %}">Circulars</a></li>
+                 </ul>
+               </div>
+				</li>
+				<li><a href="{% url 'website-contact' %}">Contact</a></li>
+				<li><a href="#">Accounts</a>
+			    <div class="sub-menu-2">
+                  <ul>
+                  	<li><a href="{% url 'website-fees' %}">Fee Structure</a></li>
+                  	<li><a href="{% url 'onlinepayment' %}">Online Fee Payment</a></li>
+                  </ul>
+              </div>
+				</li>
+				<li><a href="#">Others</a>
+					<div class="sub-menu-3">
+						<ul>
+							<li><a href="{% url 'login' %}">Login</a></li>
+							<li><a href="{% url 'register' %}">New here ?</a></li>
+							<li><a href="{% url 'website-complainbox' %}">Complain ?</a></li>
+						</ul>
+				</li>
+			</ul>
+		</div>
+		<h1>About Us:</h1>
+		<p>Satilila Charitable Society was founded in 2001 under the Society Act 1860, by a renowned industrialist and philanthropist, Shri. S. L. Vaswani. Under his visionary leadership, the society has today evolved as a premier group of institutions i.e. Skyline Institute of Engineering and Technology and Skyline Institute of Management and Technology.
+	<br>
+<br>The Institute is strategically located near New Delhi, the Capital city of India, in Greater Noida at Plot No.3, Knowledge Park-II situated on an 8 lane Express highway and sprawls on a 13 Acre lush green surroundings.
+Skyline is a prestigious name in the education sector, known for enhancing its global reputation for influential scholarship and educational experiences that make a difference in the lives of everyone. Through our actions, SIET is known as one of the most distinguished engineering institutes in Northern India. This achievement is no accident. It is the result of experienced faculty, unrivaled infrastructure, sound industry relationships and incredible facilities pursued for a number of decades.</p>
+<p>
+<br>•	 Sprawling 13-acre lush green campus
+<br>
+<br>•	 Relaxed, healthy surroundings
+<br>
+<br>•	 Located on the Taj Expressway, Greater Noida
+<br>
+<br>•	 Approved by AICTE, Ministry of HRD, New Delhi
+<br>
+<br>•	 Affiliated to the AKTU, Lucknow
+<br></p>
+<p>We strive to continuously improve the quality of education to nurture the talent of our students to enable them to embark upon a successful career and accomplishments, we inspire pride amongst generations. The Skyline Group of Institutions focuses on the need to redefine professional education in order to prepare students for a new set of challenges.
+<br>
+<br>Skyline Institute of Engineering is one of the leading Engineering Colleges in India. It is rated as the best engineering college in Delhi NCR, Noida, Greater Noida and UP. You are not only entitled to top education but also are assured of best placement providing engineering college in Noida, Greater Noida, and UP. Affiliated to AKTU, Skyline Institute boasts of top placement in industry. You get not just high-class education and industry training exposure in the top engineering institute of Noida UP but we are also committed to delivering qualified placement support to our students.
+Come study in the best engineering institute of Noida NCR, located at Greater Noida UP; we are the right choice for your engineering career. At Skyline, you are studying at Top 10 engineering institute in NCR and Uttar Pradesh (UP).
+</p>
+ <br>
+  <br>
+  <div class="footer">
+  <q>Copyright@SIET</q>
+</div>
+	</body>
+	</html>

@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="{% static 'website/fees.css' %}">
+</head>
+<body>
+    <div class ="menu-bar" class="logo">
+        <img src="{% static 'website/company.png' %}">
+      <ul>
+        <li><a href="{% url 'website-home' %}">Home</a></li>
+        <li><a href="#">Academics</a>
+                <div class="sub-menu-1">
+                 <ul>
+                  <li><a href="{% url 'website-admission' %}">Admission</a></li> 
+                  <li><a href="{% url 'website-course' %}">Courses</a></li>
+                  <li><a href="{% url 'website-syllabus' %}">Syllabus</a></li>
+                  <li><a href="{% url 'website-circular' %}">Circulars</a></li>
+                 </ul>
+               </div>
+        </li>
+        <li><a href="{% url 'website-contact' %}">Contact</a></li>
+        <li><a href="#">Accounts</a>
+          <div class="sub-menu-2">
+                  <ul>
+                    <li><a href="{% url 'website-fees' %}">Fee Structure</a></li>
+                    <li><a href="{% url 'onlinepayment' %}">Online Fee Payment</a></li>
+                  </ul>
+              </div>
+        </li>
+        <li><a href="#">Others</a>
+          <div class="sub-menu-3">
+            <ul>
+              <li><a href="{% url 'login' %}">Login</a></li>
+              <li><a href="{% url 'register' %}">New here ?</a></li>
+              <li><a href="{% url 'website-complainbox' %}">Complain ?</a></li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+
+<h2>FEES Structure</h2>
+
+<div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th>course</th>
+      
+      <th>1st year</th>
+      <th>2nd year</th>
+      <th>3rd year</th>
+      <th>4th year</th>
+      
+      
+      
+    </tr>
+    <tr>
+      <td>B-tech</td>
+      
+      
+      <td>103950</td>
+      <td>104950</td>
+      <td>105950</td>
+      <td>106950</td>
+      
+    </tr>
+    <tr>
+      <td>B-pharma</td>
+      
+      <td>90000</td>
+      <td>91000</td>
+      <td>92000</td>
+      <td>95000</td>
+      
+      
+    </tr>
+    <tr>
+      <td>MBA</td>
+      
+      <td>125000</td>
+      <td>115000</td>
+      <td>__</td>
+      <td>__</td>
+      
+    
+    </tr>
+    <tr>
+      <td>MCA</td>
+
+      <td>110000</td>
+      <td>115000</td>
+      <td>120000</td>
+      <td>__</td>
+      
+    </tr>
+    <tr>
+      <td>BCA</td>
+      <td>150000</td>
+      <td>120000</td>
+      <td>125000</td>
+      <td>__</td>
+    </tr>
+    <tr>
+      <td>BBA</td>
+      <td>100000</td>
+      <td>110000</td>
+      <td>115000</td>
+      <td>__</td>
+    </tr>
+  </table>
+</div>
+<br>
+<br>
+
+<div class="footer">
+  <q>Copyright@SIET</q>
+</div>
+
+</body>
+</html>

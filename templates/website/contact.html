@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'website/contact.css' %}">
+</head>
+<body>
+		<div class ="menu-bar" class="logo">
+				<img src="{% static 'website/company.png' %}">
+			<ul>
+				<li><a href="{% url 'website-home' %}">Home</a></li>
+				<li><a href="#">Academics</a>
+                <div class="sub-menu-1">
+                 <ul>
+                 	<li><a href="{% url 'website-admission' %}">Admission</a></li>
+                 	<li><a href="{% url 'website-course' %}">Courses</a></li>
+                 	<li><a href="{% url 'website-syllabus' %}">Syllabus</a></li>
+                 	<li><a href="{% url 'website-circular' %}">Circulars</a></li>
+                 </ul>
+               </div>
+				</li>
+				<li><a href="{% url 'website-contact' %}">Contact</a></li>
+				<li><a href="#">Accounts</a>
+			    <div class="sub-menu-2">
+                  <ul>
+                  	<li><a href="{% url 'website-fees' %}">Fee Structure</a></li>
+                  	<li><a href="{% url 'onlinepayment' %}">Online Fee Payment</a></li>
+                  </ul>
+              </div>
+				</li>
+				<li><a href="#">Others</a>
+          <div class="sub-menu-3">
+            <ul>
+              <li><a href="{% url 'login' %}">Login</a></li>
+              <li><a href="{% url 'register' %}">New here ?</a></li>
+              <li><a href="{% url 'website-complainbox' %}">Complain ?</a></li>
+            </ul>
+        </li>
+			</ul>
+		</div>
+		<h1>"Committed to Excellence In Education"</h1>
+		<div class="row">
+       <div class="column" style="background-color:#ffffff00.;">
+    <h2>Address:</h2>
+    <p> <br>        Plot no. 3
+	    <br>		 Knowledge Park-2
+	    <br>		 Greater Noida
+		<br>	     G.B Nagar (U.P)</p>
+			  
+    </div>
+  <div class="column" style="background-color:#fffff00.;">
+    <h2>Call Us At:</h2>
+    <p><br>	 07941050654
+       <br> +91 9891594148
+       <br> +91 9065177543</p>
+
+       <br>
+       <br>
+                   
+
+          <h2>Write Us At:</h2>
+              <p><br>satililaskyline@gmail.com
+                 <br>info@skylineinstitute.com</p>
+  </div>
+</div>
+<br>
+<br>
+<div class="footer">
+  <q>Copyright@SIET</q>
+</div>
+</body>
+</html>
